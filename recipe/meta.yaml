@@ -1,5 +1,5 @@
 {% set name = "tethys_dataset_services" %}
-{% set version = "2.1.0" %}
+{% set version = "2.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2813dac68b00ff52ea8dd9d5b937299938898f7e2fbf8306b928c58110ed991c
+  sha256: a195d0de2e81b7d8e5f206109b0826fba95531f67aab030290d9ed732e490d91
 
 build:
   noarch: python
@@ -41,7 +41,7 @@ test:
 
 about:
   home: https://github.com/tethysplatform/tethys_dataset_services
-  summary: 'A generic Python interface for dataset services such as GeoServer, CKAN, and HydroShare'
+  summary: A generic Python interface for dataset services such as GeoServer, CKAN, and HydroShare
   description: |
     Tethys datasets provides a Python API for various 
     dataset services such as GeoServer, CKAN, and HydroShare.
