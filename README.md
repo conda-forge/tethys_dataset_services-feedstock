@@ -1,11 +1,11 @@
-About tethys_dataset_services
-=============================
+About tethys_dataset_services-feedstock
+=======================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tethys_dataset_services-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/tethysplatform/tethys_dataset_services
 
 Package license: BSD-2-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tethys_dataset_services-feedstock/blob/main/LICENSE.txt)
 
 Summary: A generic Python interface for dataset services such as GeoServer, CKAN, and HydroShare
 
