@@ -1,5 +1,5 @@
 {% set name = "tethys_dataset_services" %}
-{% set version = "2.2.0" %}
+{% set version = "2.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a195d0de2e81b7d8e5f206109b0826fba95531f67aab030290d9ed732e490d91
+  sha256: 3c5d8a8362ce0cdadcccc75d15c42d9b4f7eb63445672b3bd9eef34af95e6a06
 
 build:
   noarch: python
@@ -27,7 +27,7 @@ requirements:
     - geoserver-restconfig
     - requests
     - requests-toolbelt
-    - sqlalchemy
+    - sqlalchemy <2
     - psycopg2
     - psycopg2-binary
 
