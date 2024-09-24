@@ -1,5 +1,5 @@
 {% set name = "tethys_dataset_services" %}
-{% set version = "2.2.1" %}
+{% set version = "2.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3c5d8a8362ce0cdadcccc75d15c42d9b4f7eb63445672b3bd9eef34af95e6a06
+  sha256: 8b78f836c92e7f0e700f92e3656b460f65ed65c12f2945c09442cf8e938b32b7
 
 build:
   noarch: python
