@@ -6,20 +6,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 8b78f836c92e7f0e700f92e3656b460f65ed65c12f2945c09442cf8e938b32b7
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - django
     - future
     - jinja2
@@ -36,6 +36,7 @@ test:
     - tethys_dataset_services
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
