@@ -1,5 +1,5 @@
 {% set name = "tethys_dataset_services" %}
-{% set version = "2.4.2" %}
+{% set version = "2.4.3" %}
 {% set python_min = "3.10.*" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 58e01127d6a42940f1699a7214d47171d8c95a074dda89bf9d7dfb7aedab8264
+  sha256: 648e2250e5c555143734c39287bbb2d4a51ef8ca259eaeb4f3e3eb587f04e878
 
 build:
   noarch: python
@@ -32,7 +32,6 @@ requirements:
     - sqlalchemy <2
     - psycopg2
     - psycopg2-binary
-    - urllib3 >=1.26,<2.0
 
 test:
   imports:
